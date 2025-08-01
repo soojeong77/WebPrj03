@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+  // js 와 jqeury 연결
+  $( function() {
+	  $('#name').val('Hello 제이쿼리!!!')
+	  
+	  let name2 = document.getElementById('name2')
+	  name2.value = 'Hello 제이쿼리!!! 부던째 텍스트'
+	  
+	  let name  = $('#name')   	  
+	  console.log(name)
+	  // alert( name.value )   // undefined
+	  alert( name[0].value )   // 'Hello 제이쿼리!!!'
+  })
+</script>
+</head>
+<body>
+  <form lid="frm">
+    <input type="text" id="name" />
+    <input type="text" id="name2" />
+    <input type="password"  />
+    <input type="radio"  />
+    <input type="checkbox"  />
+    <input type="file"  />
+  
+  </form>
+</body>
+</html>
